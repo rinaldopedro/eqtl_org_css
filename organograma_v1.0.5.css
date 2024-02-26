@@ -1,0 +1,238 @@
+::placeholder {
+    color: lightgray; /* Cor do placeholder */
+}
+
+/* Estilos das caixas */
+.box {
+    width: 300px; /* Largura total da caixa */
+    height: 70px; /* Altura total da caixa */
+    background-color: #ddd;
+    border: 1px solid #666;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+    background: linear-gradient(#f5f5f5, #ddd);
+    display: flex; /* Usando flexbox para layout */
+    flex-direction: row; /* Direção da linha (horizontal) */
+}
+	
+.box:hover {
+    border-color: #999;
+}
+
+.clicked-box {
+    border-color: red;
+}
+
+.box-content {
+    flex: 4; /* Dois terços da largura total */
+    padding: 10px;
+}
+
+.box-image {
+    flex: 1; /* Um terço da largura total */
+    padding: 10px;
+}
+
+.box-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: #f0f0f0; /* Definir uma cor de fundo para o corpo da página */
+    margin: 0; /* Remover margens padrão do corpo */
+    padding: 0; /* Remover preenchimento padrão do corpo */
+    font-family: Arial, sans-serif; /* Defina a fonte desejada */
+}
+
+/* Botões */
+button {
+    margin-bottom: 5px;
+    background-color: #ddd; /* Cor de fundo cinza */
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Faz com que os botões sejam exibidos em uma linha separada */
+    width: 120px; /* Define a largura dos botões */
+}
+
+button:hover {
+    background-color: #ccc; /* Cor de fundo cinza mais clara quando hover */
+}
+
+/* Reduzir o tamanho do texto */
+.tipoDaTela input[type="checkbox"] + label {
+ font-size: 10px; /* Defina o tamanho da fonte desejado */
+}
+
+.no-print {
+  display: none;
+}
+
+/* Estilo do container */
+#organogramaContainer {
+    position: relative;
+    margin-left: 150px;
+    margin-right: 5px;
+    margin-top: 50px;
+    height: 870px; /* Altura fixa da div */
+    overflow: hidden; /* Oculta o conteúdo que transborda */
+    position: relative; /* Define a posição para permitir o posicionamento absoluto dos elementos filhos */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+	
+#titulo {
+	font-family: Arial; 
+	color: #555491;
+	font-size: 29px;
+    position: fixed; /* Define a posição fixa para que o título permaneça no lugar mesmo quando a página é rolada */
+    top: -2.5%; /* Distância do topo */
+    left: 160px;
+    z-index: 9999; /* Garante que o título esteja acima de outros elementos */
+}	
+	
+#memorando {
+	 /*	border: none; Remove a borda */
+	    border-color: lightgray;
+		border-radius: 5px;
+    resize: none; /* Impede o redimensionamento */
+    background-color: inherit;	
+    align: left; 		
+	    position: fixed;
+    z-index: 9999; /* Garante que o título esteja acima de outros elementos */		
+	    font-family: Arial; 
+		color: #333; 
+	    font-size: 10px;
+    top: 0.5%; /* Distância do rodape */
+    left: 580px;			
+}
+	
+#verFiltroCab {
+	    position: fixed;
+    z-index: 9999; /* Garante que o título esteja acima de outros elementos */		
+	    font-family: Arial; 
+		color: #555; 
+	    font-size: 11px;
+    top: -0.3%; /* Distância do rodape */
+    left: 490px;
+		font-weight: bold;
+		text-decoration: underline;
+	}		
+
+#versao {
+	    font-family: Arial; 
+		color: #555; 
+	    font-size: 9px;
+    position: fixed; /* Define a posição fixa para que o título permaneça no lugar mesmo quando a página é rolada */
+    bottom: 0%; /* Distância do rodape */
+    right: 10px;
+    z-index: 9999; /* Garante que o título esteja acima de outros elementos */
+}
+
+#cabecMenu {
+	  font-family: Arial; 
+	  color: #9C9DC2;
+	  font-weight: bold;
+	  font-size: 18px;
+	  text-align: center;
+	  width: 120px; 
+}		
+	
+#cabecZoom {
+	  font-family: Arial; 
+	  color: #9C9DC2;
+	  font-weight: bold;
+	  font-size: 18px;
+	  text-align: center;
+	  width: 120px; 
+      cursor: pointer;
+}		
+	
+#logo {
+    position: fixed; /* Define a posição fixa para que a imagem permaneça no lugar mesmo quando a página é rolada */
+    top: 10px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    z-index: 9999; /* Garante que a imagem esteja acima de outros elementos */
+}
+	
+#slider-container {
+    margin: 5px auto;
+    width: 90%;
+}
+	
+#slider {
+    width: 100%;
+}		
+
+#menu-lateral {
+    position: fixed;
+    top: 51.3%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 120px;
+    padding: 10px;
+		height: 850px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Garante que o menu lateral esteja acima do resto do conteúdo */
+}
+	 
+#pesquisaInput {
+   padding: 10px 30px; /* Adiciona espaço para o ícone */
+   border-radius: 10px; /* Cantos arredondados */
+   border: 1px solid #333; /* Borda */
+   font-size: 14px; /* Tamanho da fonte */
+   width: 200px; /* Largura da caixa de pesquisa */
+	   height: 10px;
+   background-color: #f2f2f2; /* Cor de fundo */
+   background-image: url('lupa.png'); /* Ícone de lupa */
+	   background-size: 15px 15px; 
+   background-repeat: no-repeat;
+   background-position: 10px center; /* Posição do ícone */
+   padding-left: 40px; /* Espaçamento para o ícone */
+	   border-color: lightgray;
+}
+
+#buscaPosto {
+	   position: absolute; 
+	   top: 4px; 
+	   right: 0;
+   margin-left: 20px; /* Espaçamento entre a barra de pesquisa e os checkboxes */
+   padding: 5px;
+   font-family: inherit; /* Herde a fonte do elemento pai (tipoDaTela) */
+}
+
+#organograma {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 6px;
+    margin-top: 5px;
+	width: 5000px;
+    height: 5000px;
+    overflow: hidden; /* Para esconder o conteúdo fora da área visível */
+    transform-origin: top left; /* Define o ponto de origem da transformação de escala */
+}
+
+#miniatura {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 600px;
+    height: 340px;
+    border: 1px solid black;
+	overflow: hidden; /* Adiciona barras de rolagem se o conteúdo for grande */
+}
+
+
+#miniatura img {
+    width: 100%; /* Ajusta a largura da imagem para preencher a div miniatura */
+    height: 100%; /* Mantém a proporção da imagem */
+}
