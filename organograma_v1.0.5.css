@@ -193,7 +193,7 @@ button:hover {
    width: 200px; /* Largura da caixa de pesquisa */
 	   height: 10px;
    background-color: #f2f2f2; /* Cor de fundo */
-   background-image: url('lupa.png'); /* Ícone de lupa */
+   background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png'); /* Ícone de lupa */
 	   background-size: 15px 15px; 
    background-repeat: no-repeat;
    background-position: 10px center; /* Posição do ícone */
